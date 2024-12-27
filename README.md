@@ -44,6 +44,7 @@ To set up and run the project, ensure you have **Python 3.8 or higher** installe
      - If using VSCode and facing problem with model training, you are suggested to use Juypter Notebook.
 5. **Run the Web Application-**
    - Start the Flask application: *python app.py*
+     - Visit http://127.0.0.1:5000 in your web browser to access the web interface.
 6. **Upload Videos-**
    - Use the interface to upload a video for analysis. The AI system will classify it as either **Violence** or **Non-Violence**.
 
