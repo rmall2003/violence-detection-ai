@@ -45,17 +45,17 @@ To set up and run the project, ensure you have **Python 3.8 or higher** installe
 
 ## How to use:
 1. **Clone the Repository-**
-   git clone https://github.com/rmall2003/violence-detection-ai.git
-   cd violence-detection-ai
-2. **Download the Dataset-**
-   Download the [Real-Life Violence Situations Dataset](https://www.kaggle.com/datasets/mohamedmustafa/real-life-violence-situations-dataset) and place it in the dataset/ folder as described above.
-3. **Train the Model-**
-   To retrain the model on your dataset: *python model_training.py*
-   If using VSCode and facing problem with model training, you are suggested to use Juypter Notebook.
+   - git clone https://github.com/rmall2003/violence-detection-ai.git
+   - cd violence-detection-ai
+3. **Download the Dataset-**
+   - Download the [Real-Life Violence Situations Dataset](https://www.kaggle.com/datasets/mohamedmustafa/real-life-violence-situations-dataset) and place it in the dataset/ folder as described above.
+4. **Train the Model-**
+   - To retrain the model on your dataset: *python model_training.py*
+     - If using VSCode and facing problem with model training, you are suggested to use Juypter Notebook.
 5. **Run the Web Application-**
-   Start the Flask application: *python app.py*
+   - Start the Flask application: *python app.py*
 6. **Upload Videos-**
-   Use the interface to upload a video for analysis. The AI system will classify it as either **Violence** or **Non-Violence**.
+   - Use the interface to upload a video for analysis. The AI system will classify it as either **Violence** or **Non-Violence**.
 
 ## Technologies Used:
 - **Deep Learning**: TensorFlow, Keras
