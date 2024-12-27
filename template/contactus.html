@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Violence Detection AI</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.02);
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #fff, #a5b4fc);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .input-style {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        .input-style:focus {
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <header class="glass-effect fixed w-full z-50 py-4">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-shield-alt text-3xl text-white"></i>
+                    <span class="text-2xl font-bold gradient-text">Violence Detection AI</span>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="/" class="text-white hover:text-purple-300 transition flex items-center space-x-2">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="/techno_used" class="text-white hover:text-purple-300 transition flex items-center space-x-2">
+                        <i class="fas fa-microchip"></i>
+                        <span>Technology</span>
+                    </a>
+                    <a href="/terms_privacy" class="text-white hover:text-purple-300 transition flex items-center space-x-2">
+                        <i class="fas fa-lock"></i>
+                        <span>Privacy</span>
+                    </a>
+                    <a href="/contactus" class="text-white hover:text-purple-300 transition flex items-center space-x-2">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="pt-32 pb-16">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-6xl font-bold gradient-text mb-6">Get in Touch</h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">We're here to help and answer any questions you might have about our AI-powered violence detection system.</p>
+            <div>   <button class="fullscreen-button" onclick="goFullscreen()">Enter Fullscreen</button></div> 
+
+        </div>
+    </section>
+
+    <main class="pb-16">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-8 max-w-6xl mx-auto">
+                <div class="w-full lg:w-2/3">
+                    <div class="glass-effect rounded-2xl p-8 hover-scale">
+                        <form id="contactForm" onsubmit="return promptmessage(event)" method="POST" class="space-y-6">
+                            <div class="mb-8 text-center">
+                                <div class="w-20 h-20 mx-auto mb-4 glass-effect rounded-full flex items-center justify-center">
+                                    <i class="fas fa-paper-plane text-3xl text-white"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-white">Send Us a Message</h3>
+                            </div>
+
+                            <div class="space-y-6">
+                                <div>
+                                    <label class="block text-white text-lg font-semibold mb-2">
+                                        <i class="fas fa-user mr-2"></i>Your Name
+                                    </label>
+                                    <input type="text" id="name" name="name" required
+                                        class="w-full input-style text-white py-4 px-6 rounded-xl focus:outline-none"
+                                        placeholder="Enter your name">
+                                </div>
+
+                                <div>
+                                    <label class="block text-white text-lg font-semibold mb-2">
+                                        <i class="fas fa-envelope mr-2"></i>Your Email
+                                    </label>
+                                    <input type="email" id="email" name="email" required
+                                        class="w-full input-style text-white py-4 px-6 rounded-xl focus:outline-none"
+                                        placeholder="Enter your email">
+                                </div>
+
+                                <div>
+                                    <label class="block text-white text-lg font-semibold mb-2">
+                                        <i class="fas fa-comment mr-2"></i>Your Message
+                                    </label>
+                                    <textarea id="message" name="message" required rows="6"
+                                        class="w-full input-style text-white py-4 px-6 rounded-xl focus:outline-none"
+                                        placeholder="Type your message here..."></textarea>
+                                </div>
+
+                                <button type="submit"
+                                    class="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white py-4 rounded-xl hover:opacity-90 transition font-bold text-lg">
+                                    <i class="fas fa-paper-plane mr-2"></i>
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-1/3">
+                    <div class="glass-effect rounded-2xl p-8 hover-scale">
+                        <div class="mb-8 text-center">
+                            <div class="w-20 h-20 mx-auto mb-4 glass-effect rounded-full flex items-center justify-center">
+                                <i class="fas fa-info-circle text-3xl text-white"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">Contact Information</h3>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4 text-white">
+                                <div class="w-12 h-12 glass-effect rounded-full flex items-center justify-center">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Email</h4>
+                                    <a href="mailto:rashimall.2701@gmail.com" class="text-purple-300 hover:text-purple-200 transition">
+                                        rashimall.2701@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-4 text-white">
+                                <div class="w-12 h-12 glass-effect rounded-full flex items-center justify-center">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Phone</h4>
+                                    <p class="text-purple-300">+91 8178549726</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-4 text-white">
+                                <div class="w-12 h-12 glass-effect rounded-full flex items-center justify-center">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Address</h4>
+                                    <p class="text-purple-300">Jaypee Institute of Information Technology, Noida</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 pt-8 border-t border-white border-opacity-20">
+                            <h4 class="text-white font-semibold mb-4">Follow Us</h4>
+                            <div class="flex justify-center space-x-6">
+                                <a href="#" class="text-white hover:text-purple-300 transition">
+                                    <i class="fab fa-twitter text-xl"></i>
+                                </a>
+                                <a href="#" class="text-white hover:text-purple-300 transition">
+                                    <i class="fab fa-linkedin text-xl"></i>
+                                </a>
+                                <a href="#" class="text-white hover:text-purple-300 transition">
+                                    <i class="fab fa-github text-xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="glass-effect py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-white mb-4 md:mb-0">
+                    © 2024 Violence Detection AI. All Rights Reserved.
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-white hover:text-purple-300 transition">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-purple-300 transition">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-purple-300 transition">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function promptmessage(event) {
+            event.preventDefault();
+            alert("Thank you! Your message has been sent successfully. We'll get back to you soon!");
+            document.getElementById('contactForm').reset();
+        }
+    </script>
+      <script src="/static/js/main.js">
+
+      </script>
+</body>
+</html>
