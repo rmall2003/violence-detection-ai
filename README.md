@@ -22,30 +22,20 @@ Place the dataset folder in the root directory of this repository.
 ## Requirements:
 To set up and run the project, ensure you have **Python 3.8 or higher** installed.
 ### Installing Dependencies
-1. Install the required Python libraries:
-   pip install -r requirements.txt
-2. If you prefer manual installation, ensure the following main libraries are installed:
-   - TensorFlow/Keras: For deep learning model building.
-   - OpenCV: For video processing.
-   - Flask: For the web application.
-   - Matplotlib: For data visualization.
-   - Scikit-learn: For preprocessing and evaluation metrics.
-   - **Install manually using:**
-     - pip install tensorflow opencv-python flask matplotlib scikit-learn flask-cors
+Ensure the following main libraries are installed: **pip install tensorflow opencv-python flask matplotlib scikit-learn flask-cors imageio tqdm**
 
 ## How to use:
 1. **Clone the Repository-**
    - git clone https://github.com/rmall2003/violence-detection-ai.git
    - cd violence-detection-ai
-3. **Download the Dataset-**
+2. **Download the Dataset-**
    - Download the [Real-Life Violence Situations Dataset](https://www.kaggle.com/datasets/mohamedmustafa/real-life-violence-situations-dataset) and place it in the dataset/ folder as described above.
-4. **Train the Model-**
-   - To retrain the model on your dataset: *python model_training.py*
+3. **Train the Model-**
+   - To retrain the model on your dataset: **python model_training.py**
      - If using VSCode and facing problem with model training, you are suggested to use Juypter Notebook.
-5. **Run the Web Application-**
-   - Start the Flask application: *python app.py*
-     - Visit http://127.0.0.1:5000 in your web browser to access the web interface.
-6. **Upload Videos-**
+4. **Run the Web Application-**
+   - Start the Flask application: **python app.py**
+5. **Upload Videos-**
    - Use the interface to upload a video for analysis. The AI system will classify it as either **Violence** or **Non-Violence**.
 
 ## Technologies Used:
@@ -55,14 +45,6 @@ To set up and run the project, ensure you have **Python 3.8 or higher** installe
 - **Frontend**: HTML, Tailwind CSS
 - **Visualization**: Matplotlib
 - **Data Preprocessing**: Scikit-learn
-## Screenshots:
-# Landing Page-
-
-# Upload Video- 
-# Result Prediction-
-
-# Alert-
-![Mail Alert](https://github.com/user-attachments/assets/daaea649-e897-42e9-8e9b-d47124983631)
 
 ## Contributors:
 - **Rashi Mall**: Assisted in data collection from Kaggle and contributed to front-end development, including preprocessing tasks like frame extraction and resizing.
@@ -75,6 +57,5 @@ If you wish to contribute in this, most welcome
 - Commit your changes (git commit -m 'Add new feature').
 - Push to the branch (git push origin feature/your-feature).
 - Open a pull request.
-
-
-Feel free to customize this further as needed!
+_____________________
+### Feel free to customize this further as needed!
