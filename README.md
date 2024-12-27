@@ -30,8 +30,8 @@ To set up and run the project, ensure you have **Python 3.8 or higher** installe
    - Flask: For the web application.
    - Matplotlib: For data visualization.
    - Scikit-learn: For preprocessing and evaluation metrics.
-   **Install manually using:**
-     pip install tensorflow opencv-python flask matplotlib scikit-learn flask-cors
+   - **Install manually using:**
+     - pip install tensorflow opencv-python flask matplotlib scikit-learn flask-cors
 
 ## How to use:
 1. **Clone the Repository-**
