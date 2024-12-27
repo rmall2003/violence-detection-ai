@@ -12,14 +12,15 @@ This repository contains the codebase for a deep learning-based **Violence Detec
 This project uses the [Real-Life Violence Situations Dataset](https://www.kaggle.com/datasets/mohamedmustafa/real-life-violence-situations-dataset), which categorizes videos into two classes:
 **Violence** and **Non-Violence**
 Download the dataset and organize it in the following structure:
-
+'
 dataset/
 ├── Violence/
 ├── NonViolence/
-
+'
 Place the dataset folder in the root directory of this repository.
 
 ## Project Structure:
+'
 ├── app.py                       # Flask backend
 ├── model_training.py            # Script for training the model
 ├── templates/                   # HTML files for the Flask app
@@ -64,6 +65,14 @@ To set up and run the project, ensure you have **Python 3.8 or higher** installe
 - **Frontend**: HTML, Tailwind CSS
 - **Visualization**: Matplotlib
 - **Data Preprocessing**: Scikit-learn
+## Screenshots:
+# Landing Page-
+
+# Upload Video- 
+# Result Prediction-
+
+# Alert-
+![Mail Alert](https://github.com/user-attachments/assets/daaea649-e897-42e9-8e9b-d47124983631)
 
 ## Contributors:
 - **Rashi Mall**: Assisted in data collection from Kaggle and contributed to front-end development, including preprocessing tasks like frame extraction and resizing.
